@@ -34,7 +34,7 @@ public class Main {
             System.out.println(callable4 + "колличество запусков - " + task4.get());
 
             Integer result = threadPool.invokeAny(callableList);
-            System.out.println("Результат самой быстрой задачи " + result);
+            System.out.println("Результат одной из задач " + result);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
